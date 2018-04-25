@@ -51,11 +51,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Asteroid.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\AutoRelease.cs" />
+     <Compile Include="Assets\Scripts\CollisionDamage.cs" />
+     <Compile Include="Assets\Scripts\Controls\ControlsBase.cs" />
+     <Compile Include="Assets\Scripts\Controls\ControlsInput.cs" />
+     <Compile Include="Assets\Scripts\Controls\IControllable.cs" />
+     <Compile Include="Assets\Scripts\Controls\ShipControllerBase.cs" />
+     <Compile Include="Assets\Scripts\Controls\ShipControllerPhysics2D.cs" />
+     <Compile Include="Assets\Scripts\Controls\ShipControllerTransforms.cs" />
      <Compile Include="Assets\Scripts\FitAreaToCamera.cs" />
+     <Compile Include="Assets\Scripts\FloatExtensions.cs" />
+     <Compile Include="Assets\Scripts\Follow.cs" />
      <Compile Include="Assets\Scripts\GameArea.cs" />
      <Compile Include="Assets\Scripts\GameAreaLooper.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameUI.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\PlayAudioOnEnable.cs" />
+     <Compile Include="Assets\Scripts\PlayerSettings.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\ShipDamage.cs" />
      <Compile Include="Assets\Scripts\SimpleShipController.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\Sprites\Spaceships\Smallfighter-spaceship-by-MillionthVector\Credits.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

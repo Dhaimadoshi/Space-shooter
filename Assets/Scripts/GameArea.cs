@@ -32,6 +32,29 @@ namespace Shooter
 		public Color gizmoColor = new Color(0,0,1, 0.2f);
 		Color gizmoWireColor;
 
+		static private GameArea _main;
+		static public GameArea Main
+		{
+			get 
+			{
+				if (_main == null)
+				{
+					_main = (GameArea) GameObject.FindObjectOfType(typeof(GameArea));
+					if (_main == null)
+					{
+						GameObject go = new GameObject("Game Area : Main");
+						_main = go.AddComponent<GameArea>();
+						go.AddComponent<FitAreaToCamera>();
+					}
+				}
+				return _main;
+			}
+			set
+			{
+				_main = value;
+			}
+		}
+
 //		public void SetArea(Vector2 size)
 //		{
 //			Area = new Rect(size.x * -0.5f, size.y * -0.5f, size.x, size.y);

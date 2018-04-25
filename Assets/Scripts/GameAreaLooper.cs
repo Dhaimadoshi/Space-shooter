@@ -17,7 +17,13 @@ namespace Shooter
 		public GameArea gameArea;
 		Vector3 areaSpacePosition;
 
-		void Update()
+		void Start()
+		{
+			if (!gameArea)
+				gameArea = GameArea.Main;
+		}
+
+		void FixedUpdate()
 		{
 //			Vector3 position = transform.position;
 			areaSpacePosition = gameArea.transform.InverseTransformPoint(transform.position);

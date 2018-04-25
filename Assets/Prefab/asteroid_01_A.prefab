@@ -21,6 +21,10 @@ GameObject:
   - component: {fileID: 4543210930028064}
   - component: {fileID: 212286481710898182}
   - component: {fileID: 95299632526868668}
+  - component: {fileID: 50986374483724512}
+  - component: {fileID: 58297085954991662}
+  - component: {fileID: 114249491302254716}
+  - component: {fileID: 114268630148334938}
   m_Layer: 0
   m_Name: asteroid_01_A
   m_TagString: Untagged
@@ -41,6 +45,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50986374483724512
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095204458343126}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 1
+  m_Mass: 0.12566371
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: d00d4792525f645b6adc4860dd3f1d68, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &58297085954991662
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095204458343126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d00d4792525f645b6adc4860dd3f1d68, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2
 --- !u!95 &95299632526868668
 Animator:
   serializedVersion: 3
@@ -58,6 +97,31 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114249491302254716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095204458343126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa6101efc7a64ea3ae27a1eb20a62eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameArea: {fileID: 0}
+--- !u!114 &114268630148334938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095204458343126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7de4079b6ff047ed99ac8ad576fc6b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 5
+  explosion: {fileID: 1512806854694488, guid: 9286fc7fbbbf6428cb5683597e84d6ae, type: 2}
 --- !u!212 &212286481710898182
 SpriteRenderer:
   m_ObjectHideFlags: 1
